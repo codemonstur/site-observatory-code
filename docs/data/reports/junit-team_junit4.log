@@ -1,0 +1,5 @@
+Cloning into '/tmp/codegrade-17100361613477948082'...
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Wrote report to reports/junit-team_junit4.json

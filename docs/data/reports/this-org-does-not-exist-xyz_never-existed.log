@@ -1,0 +1,6 @@
+Cloning into '/tmp/codegrade-6164993040786838525'...
+fatal: could not read Username for 'https://github.com': No such device or address
+Exception in thread "main" java.io.IOException: git clone failed with exit code 128 for https://github.com/this-org-does-not-exist-xyz/never-existed.git
+	at codegrade.core.Codebase.cloneRepo(Codebase.java:74)
+	at codegrade.core.Codebase.resolve(Codebase.java:47)
+	at codegrade.cli.Main.main(Main.java:40)

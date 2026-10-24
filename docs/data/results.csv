@@ -1,0 +1,9 @@
+repo,scanned_at,score,status
+this-org-does-not-exist-xyz/never-existed,2026-10-22T20:21:25Z,,failed
+apache/commons-cli,2026-10-22T20:21:30Z,81.4,ok
+codemonstur/filter,2026-10-22T20:21:32Z,91.0,ok
+codemonstur/slate4j,2026-10-22T20:21:34Z,91.9,ok
+codemonstur/simplexml,2026-10-22T20:21:37Z,90.1,ok
+codemonstur/templateer,2026-10-22T20:21:38Z,91.4,ok
+codemonstur/jcli,2026-10-22T20:21:41Z,88.8,ok
+junit-team/junit4,2026-10-22T20:21:46Z,83.6,ok

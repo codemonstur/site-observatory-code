@@ -1,0 +1,3275 @@
+{
+  "target": "apache/commons-cli (https://github.com/apache/commons-cli.git)",
+  "files": 87,
+  "unixTimestamp": 1792700490,
+  "iso8601": "2026-10-22T20:21:30.406026151Z",
+  "generatedAt": "Thursday, October 22, 2026 20:21:30 UTC",
+  "durationMillis": 1781,
+  "duration": "1.781 s",
+  "score": 81.4,
+  "checks": [
+    {
+      "id": "long-file",
+      "description": "Files should stay under 150 lines, counting Javadoc as one",
+      "filesChecked": 87,
+      "filesFailing": 36,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": 1045
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": 860
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": 1101
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": 1032
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+          "line": 340
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": 350
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": 339
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": 240
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PosixParser.java",
+          "line": 236
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": 295
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": 510
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": 481
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": 466
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+          "line": 397
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+          "line": 866
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+          "line": 341
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+          "line": 198
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+          "line": 1023
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ConverterTests.java",
+          "line": 246
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": 409
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+          "line": 168
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+          "line": 817
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionGroupTest.java",
+          "line": 214
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": 361
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+          "line": 184
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionsTest.java",
+          "line": 317
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+          "line": 173
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+          "line": 156
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": 268
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValueTest.java",
+          "line": 320
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValuesTest.java",
+          "line": 158
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI162Test.java",
+          "line": 388
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugsTest.java",
+          "line": 350
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+          "line": 575
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+          "line": 322
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+          "line": 499
+        }
+      ]
+    },
+    {
+      "id": "long-line",
+      "description": "Lines should stay under 120 characters",
+      "filesChecked": 87,
+      "filesFailing": 53,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
+          "line": 44
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": 320
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Converter.java",
+          "line": 31
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": 42
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+          "line": 47
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": 47
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": 29
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+          "line": 279
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionValidator.java",
+          "line": 26
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": 143
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/ParseException.java",
+          "line": 31
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": 74
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": 164
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PosixParser.java",
+          "line": 72
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": 32
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Util.java",
+          "line": 63
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": 34
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+          "line": 24
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+          "line": 25
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+          "line": 33
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": 137
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+          "line": 28
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": 54
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+          "line": 22
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/package-info.java",
+          "line": 24
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+          "line": 47
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+          "line": 175
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+          "line": 109
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ConverterTests.java",
+          "line": 108
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": 226
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DisablePartialMatchingTest.java",
+          "line": 56
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+          "line": 67
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionGroupTest.java",
+          "line": 143
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": 43
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+          "line": 164
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionsTest.java",
+          "line": 87
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+          "line": 49
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+          "line": 58
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": 79
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValuesTest.java",
+          "line": 46
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI162Test.java",
+          "line": 183
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI18Test.java",
+          "line": 36
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+          "line": 40
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+          "line": 47
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+          "line": 73
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+          "line": 54
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+          "line": 138
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+          "line": 30
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+          "line": 37
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+          "line": 68
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+          "line": 155
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+          "line": 265
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+          "line": 89
+        }
+      ]
+    },
+    {
+      "id": "blank-lines",
+      "description": "Avoid multiple consecutive blank lines",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "trailing-whitespace",
+      "description": "Lines should not have trailing whitespace",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "tab-indent",
+      "description": "Indent with spaces, not tabs",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "newline-eof",
+      "description": "Files should end with a newline",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "empty-file",
+      "description": "Files should not be empty",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "star-imports",
+      "description": "Avoid wildcard (star) imports",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "unused-imports",
+      "description": "Remove unused imports",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "class-name-case",
+      "description": "Class names should be PascalCase",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "method-name-case",
+      "description": "Method/field names should be camelCase",
+      "filesChecked": 87,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugsTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "exception-name",
+      "description": "Exceptions should not end in Exception",
+      "filesChecked": 87,
+      "filesFailing": 6,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingArgumentException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/UnrecognizedOptionException.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "oop-name",
+      "description": "Avoid OOP-role suffixes in class names",
+      "filesChecked": 87,
+      "filesFailing": 5,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ConverterTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "long-names",
+      "description": "Avoid overly long class/method names",
+      "filesChecked": 87,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionsTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "single-letter-var",
+      "description": "Avoid single-letter variable names",
+      "filesChecked": 87,
+      "filesFailing": 27,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Converter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionValidator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/Util.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionsTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugsTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "constant-naming",
+      "description": "static final fields should be UPPER_SNAKE_CASE",
+      "filesChecked": 87,
+      "filesFailing": 12,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingArgumentException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionGroup.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/UnrecognizedOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "boolean-method-name",
+      "description": "Boolean methods should start with is/has/can/should",
+      "filesChecked": 87,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionValidator.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "default-package",
+      "description": "Classes should declare a package",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "reverse-dns-package",
+      "description": "Avoid reverse-DNS style package names",
+      "filesChecked": 87,
+      "filesFailing": 87,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/BasicParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Char.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLineParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Converter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/GnuParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingArgumentException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionGroup.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionValidator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PosixParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/UnrecognizedOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Util.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/Util.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/package-info.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/package-info.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ArgumentIsOptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ConverterTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DisablePartialMatchingTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/MissingOptionExceptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionBuilderTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionCountTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionGroupTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionsTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PosixParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/UtilTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValueTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValuesTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI133Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI13Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI148Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI162Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI18Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugsTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextStyleTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "long-method",
+      "description": "Methods should stay under 50 lines",
+      "filesChecked": 87,
+      "filesFailing": 17,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PosixParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI162Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextStyleTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "too-many-parameters",
+      "description": "Methods should take at most 5 parameters",
+      "filesChecked": 87,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "deep-nesting",
+      "description": "Avoid deeply nested blocks (max 4)",
+      "filesChecked": 87,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/GnuParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PosixParser.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "high-complexity",
+      "description": "Methods should stay under cyclomatic complexity 10",
+      "filesChecked": 87,
+      "filesFailing": 8,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/GnuParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PosixParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "many-returns",
+      "description": "Avoid methods with too many returns",
+      "filesChecked": 87,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "else-if-chain",
+      "description": "Avoid long else-if chains",
+      "filesChecked": 87,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "enhanced-for",
+      "description": "Use enhanced for-loops over index loops",
+      "filesChecked": 87,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "inner-class-depth",
+      "description": "Avoid deeply nested classes",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "large-class",
+      "description": "Classes should stay under 40 methods+fields",
+      "filesChecked": 87,
+      "filesFailing": 6,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI162Test.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "too-many-public-methods",
+      "description": "Classes should have at most 10 public methods",
+      "filesChecked": 87,
+      "filesFailing": 10,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "public-mutable-field",
+      "description": "Avoid public non-final fields",
+      "filesChecked": 87,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "mutable-static",
+      "description": "Avoid non-final static fields",
+      "filesChecked": 87,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ConverterTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "missing-equals-hashcode",
+      "description": "Override equals and hashCode together",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "getters-setters",
+      "description": "Avoid getters and setters (expose behavior, not state)",
+      "filesChecked": 87,
+      "filesFailing": 24,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingArgumentException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionGroup.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/UnrecognizedOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "boolean-parameter",
+      "description": "Avoid boolean parameters",
+      "filesChecked": 87,
+      "filesFailing": 25,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/BasicParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLineParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/GnuParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionGroup.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PosixParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "string-equality",
+      "description": "Compare Strings with .equals, not \u003d\u003d",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "space-indent",
+      "description": "Indent with an even number of spaces",
+      "filesChecked": 87,
+      "filesFailing": 86,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/BasicParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Char.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLineParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Converter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/GnuParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingArgumentException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionGroup.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionValidator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PosixParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/UnrecognizedOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Util.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/Util.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/package-info.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AlreadySelectedExceptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ArgumentIsOptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ConverterTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DeprecatedAttributesTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DisablePartialMatchingTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/MissingOptionExceptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionBuilderTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionCountTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionGroupTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionsTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ParseExceptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PosixParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/SolrCliTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/SolrCreateToolTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/UnrecognizedOptionExceptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/UtilTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValueTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValuesTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI133Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI13Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI148Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI162Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI18Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI312Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI325Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugsTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextStyleTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "license-header",
+      "description": "Avoid license boilerplate at the top of files",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "final-parameters",
+      "description": "Method parameters should be declared final",
+      "filesChecked": 87,
+      "filesFailing": 5,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLineParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Converter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpAppendable.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "magic-number",
+      "description": "Avoid magic numbers",
+      "filesChecked": 87,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "deprecated-api",
+      "description": "Avoid deprecated constructors/APIs",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "suppress-warnings",
+      "description": "Avoid @SuppressWarnings",
+      "filesChecked": 87,
+      "filesFailing": 24,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/BasicParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ArgumentIsOptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionBuilderTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionGroupTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionsTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PosixParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValueTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValuesTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI133Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI13Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI148Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugsTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "missing-javadoc",
+      "description": "Public classes/methods should have Javadoc",
+      "filesChecked": 87,
+      "filesFailing": 34,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/FilterHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TableDefinition.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ArgumentIsOptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ConverterTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionGroupTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PosixParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValueTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValuesTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI148Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI162Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI265Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI71Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "author-tag",
+      "description": "Avoid @author tags",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "private-field-javadoc",
+      "description": "Avoid Javadoc on private fields",
+      "filesChecked": 87,
+      "filesFailing": 26,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/AlreadySelectedException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/AmbiguousOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DeprecatedAttributes.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingArgumentException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionGroup.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/ParseException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PosixParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/UnrecognizedOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextStyle.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/Util.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI162Test.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "empty-catch",
+      "description": "Avoid empty catch blocks",
+      "filesChecked": 87,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "empty-finally",
+      "description": "Avoid empty finally blocks",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "empty-method",
+      "description": "Avoid empty method bodies",
+      "filesChecked": 87,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PosixParserTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "catch-general",
+      "description": "Avoid catching broad Exception/Throwable",
+      "filesChecked": 87,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "return-null",
+      "description": "Avoid returning null",
+      "filesChecked": 87,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionValidator.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "switch-fallthrough",
+      "description": "Avoid switch case fall-through",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "switch-default",
+      "description": "Switch statements should have a default",
+      "filesChecked": 87,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "optional-get",
+      "description": "Avoid Optional.get() without isPresent()",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "raw-types",
+      "description": "Avoid raw generic types",
+      "filesChecked": 87,
+      "filesFailing": 32,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/GnuParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/MissingOptionException.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Parser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PosixParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/AbstractHelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/CommandLineTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ConverterTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/MissingOptionExceptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionValidatorTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionsTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI266Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/AptHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/WeirdOptionFormat.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/example/XhtmlHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextHelpAppendableTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/TextStyleTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/UtilTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "print-stack-trace",
+      "description": "Avoid printStackTrace()",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "system-out",
+      "description": "Avoid System.out/err (use a logger)",
+      "filesChecked": 87,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "commented-out-code",
+      "description": "Avoid commented-out code",
+      "filesChecked": 87,
+      "filesFailing": 10,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Converter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/TypeHandler.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ConverterTests.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PatternOptionBuilderTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ValuesTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "todo-fixme",
+      "description": "No leftover TODO/FIXME/XXX markers",
+      "filesChecked": 87,
+      "filesFailing": 11,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/DefaultParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/PatternOptionBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/OptionFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/help/TextHelpAppendable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/AbstractParserTestCase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/ApplicationTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PosixParserTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "hardcoded-secret",
+      "description": "Avoid hardcoded secrets/credentials",
+      "filesChecked": 87,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI162Test.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "weak-hash",
+      "description": "Avoid weak hash algorithms (MD5/SHA1)",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "sql-concat",
+      "description": "Avoid SQL string concatenation",
+      "filesChecked": 87,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/test/java/org/apache/commons/cli/HelpFormatterTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "test-no-assertions",
+      "description": "Test methods should contain assertions",
+      "filesChecked": 87,
+      "filesFailing": 10,
+      "violations": [
+        {
+          "path": "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/OptionTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PosixParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/TypeHandlerTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI18Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/bug/BugCLI252Test.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/HelpFormatterTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/help/OptionFormatterTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "thread-sleep-test",
+      "description": "Avoid Thread.sleep in tests",
+      "filesChecked": 87,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "ignored-test",
+      "description": "Avoid @Ignore/@Disabled tests",
+      "filesChecked": 87,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PosixParserTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "empty-test",
+      "description": "Avoid empty test methods",
+      "filesChecked": 87,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/test/java/org/apache/commons/cli/BasicParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/DefaultParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/GnuParserTest.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/org/apache/commons/cli/PosixParserTest.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "unused-private",
+      "description": "Remove unused private fields/methods",
+      "filesChecked": 87,
+      "filesFailing": 5,
+      "violations": [
+        {
+          "path": "src/main/java/org/apache/commons/cli/CommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/HelpFormatter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Option.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/OptionGroup.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/org/apache/commons/cli/Options.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "license",
+      "description": "Project must have a LICENSE file",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "readme",
+      "description": "Project must have a README file",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "build-file",
+      "description": "Project must have a build file (pom.xml or Gradle)",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "too-many-deps",
+      "description": "Keep dependencies under 20",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "snapshot-deps",
+      "description": "Avoid -SNAPSHOT/dynamic dependency versions",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-6044480520179758547",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "missing-dep-version",
+      "description": "Every dependency should declare a version",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-6044480520179758547",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "library-no-deps",
+      "description": "Libraries should have zero non-test dependencies (plugins exempt)",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "single-class-package",
+      "description": "Packages should contain more than one file",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "mixed-package",
+      "description": "A package should hold either files or sub-packages, not both",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-6044480520179758547",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "package-too-large",
+      "description": "Keep packages under 30 classes",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-6044480520179758547",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "circular-packages",
+      "description": "Avoid circular package dependencies",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-6044480520179758547",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "long-inheritance",
+      "description": "Avoid inheritance chains deeper than 3",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-6044480520179758547",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "no-tests",
+      "description": "Project should include tests",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "test-ratio",
+      "description": "Keep a reasonable test-to-source ratio",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "untested-classes",
+      "description": "Every main class should have a test",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-6044480520179758547",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "duplicated-code",
+      "description": "Avoid duplicated code blocks across files",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-6044480520179758547",
+          "line": -1
+        }
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "id": "loc",
+      "description": "Total physical lines",
+      "value": 20545
+    },
+    {
+      "id": "sloc",
+      "description": "Source lines, excluding blanks and comments",
+      "value": 12354
+    },
+    {
+      "id": "max-file-length",
+      "description": "Longest file, in lines",
+      "value": 1101
+    },
+    {
+      "id": "cyclomatic-total",
+      "description": "Sum of cyclomatic complexity over all methods",
+      "value": 1604
+    },
+    {
+      "id": "cyclomatic-mean",
+      "description": "Mean cyclomatic complexity per method",
+      "value": 1.6153071500503524
+    },
+    {
+      "id": "cyclomatic-max",
+      "description": "Highest cyclomatic complexity of any method",
+      "value": 20
+    },
+    {
+      "id": "max-nesting",
+      "description": "Deepest control-flow nesting, in blocks",
+      "value": 8
+    },
+    {
+      "id": "halstead-volume",
+      "description": "Halstead volume of the whole codebase",
+      "value": 444514.01879605267
+    },
+    {
+      "id": "comment-ratio",
+      "description": "Comment lines, percent of all lines",
+      "value": 26.809442686785104
+    },
+    {
+      "id": "javadoc-coverage",
+      "description": "Public types and methods with Javadoc, percent",
+      "value": 86.0310421286031
+    },
+    {
+      "id": "parse-failure-rate",
+      "description": "Files that failed to parse, percent",
+      "value": 0
+    },
+    {
+      "id": "maintainability-index",
+      "description": "Maintainability index, 0-100",
+      "value": 91.93843457836175
+    },
+    {
+      "id": "package-instability",
+      "description": "Mean package instability Ce/(Ca+Ce), percent",
+      "value": 60.416666666666664
+    },
+    {
+      "id": "commits",
+      "description": "Commits in history",
+      "value": 1
+    },
+    {
+      "id": "churn",
+      "description": "Lines added and deleted across history",
+      "value": 26561
+    },
+    {
+      "id": "hotspot-index",
+      "description": "Highest churn times complexity of any file",
+      "value": 139700
+    }
+  ],
+  "categories": [
+    {
+      "name": "duplication",
+      "score": 0.0
+    },
+    {
+      "name": "structure",
+      "score": 20.0
+    },
+    {
+      "name": "dependencies",
+      "score": 33.3
+    },
+    {
+      "name": "coverage",
+      "score": 66.7
+    },
+    {
+      "name": "documentation",
+      "score": 77.0
+    },
+    {
+      "name": "style",
+      "score": 77.6
+    },
+    {
+      "name": "naming",
+      "score": 83.2
+    },
+    {
+      "name": "format",
+      "score": 85.4
+    },
+    {
+      "name": "design",
+      "score": 90.1
+    },
+    {
+      "name": "noise",
+      "score": 93.7
+    },
+    {
+      "name": "control flow",
+      "score": 94.0
+    },
+    {
+      "name": "dead code",
+      "score": 94.3
+    },
+    {
+      "name": "complexity",
+      "score": 94.4
+    },
+    {
+      "name": "tests",
+      "score": 94.8
+    },
+    {
+      "name": "security",
+      "score": 99.2
+    },
+    {
+      "name": "library",
+      "score": 100.0
+    },
+    {
+      "name": "project",
+      "score": 100.0
+    },
+    {
+      "name": "imports",
+      "score": 100.0
+    }
+  ]
+}

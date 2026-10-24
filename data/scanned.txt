@@ -1,0 +1,8 @@
+this-org-does-not-exist-xyz/never-existed
+apache/commons-cli
+codemonstur/filter
+codemonstur/slate4j
+codemonstur/simplexml
+codemonstur/templateer
+codemonstur/jcli
+junit-team/junit4

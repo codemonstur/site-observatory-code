@@ -1,0 +1,78 @@
+name: Scan random Java projects
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+    inputs:
+      count:
+        description: Number of projects to scan
+        required: true
+        default: '5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Sample unscanned projects
+        run: |
+          COUNT="${{ github.event.inputs.count || '5' }}"
+          sort -u data/java-repositories.txt > "$RUNNER_TEMP/all.txt"
+          sort -u data/scanned.txt > "$RUNNER_TEMP/scanned.txt"
+          comm -23 "$RUNNER_TEMP/all.txt" "$RUNNER_TEMP/scanned.txt" > "$RUNNER_TEMP/candidates.txt"
+          total=$(wc -l < "$RUNNER_TEMP/candidates.txt")
+          take=$(( COUNT < total ? COUNT : total ))
+          shuf -n "$take" "$RUNNER_TEMP/candidates.txt" > "$RUNNER_TEMP/sample.txt"
+          echo "candidates: $total, scanning: $take"
+          cat "$RUNNER_TEMP/sample.txt"
+
+      - name: Scan with codegrade
+        run: |
+          mkdir -p docs/data/reports
+          while IFS= read -r repo; do
+            [ -z "$repo" ] && continue
+            slug=${repo//\//_}
+            report="docs/data/reports/$slug.json"
+            log="docs/data/reports/$slug.log"
+            echo "::group::Scanning $repo"
+            score=""
+            if timeout 900 java -jar codegrade-cli.jar "$repo" -f JSON -o "$report" > "$log" 2>&1; then
+              score=$(jq -r '.score // empty' "$report" 2>/dev/null)
+            fi
+            if [ -n "$score" ]; then
+              status=ok
+            else
+              status=failed
+              rm -f "$report"
+            fi
+            echo "::endgroup::"
+            echo "$repo,$(date -u +%Y-%m-%dT%H:%M:%SZ),$score,$status" >> docs/data/results.csv
+            echo "$repo" >> data/scanned.txt
+          done < "$RUNNER_TEMP/sample.txt"
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/scanned.txt docs/data/
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "Scan $(wc -l < data/scanned.txt) projects total"
+            git push
+          fi

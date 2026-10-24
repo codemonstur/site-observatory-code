@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Observatory</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lib/dist/uPlot.min.css">
+</head>
+<body>
+  <header>
+    <h1>Code Observatory</h1>
+    <p class="subtitle">Quality scores of random Java projects on GitHub, scanned daily with codegrade</p>
+    <div class="meta" id="meta"><!-- Filled by app.js --></div>
+  </header>
+
+  <main>
+    <section class="stats" id="stats"><!-- Stat cards injected by app.js --></section>
+
+    <section class="grid">
+      <div class="chart-card">
+        <div class="card-header"><h2>Score distribution</h2></div>
+        <div id="chart-distribution" class="chart"></div>
+      </div>
+      <div class="chart-card">
+        <div class="card-header"><h2>Scores over time</h2></div>
+        <div id="chart-timeline" class="chart"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Leaderboard</h2>
+        <div class="controls">
+          <input id="search" type="search" placeholder="Filter repositories…" aria-label="Filter repositories">
+          <select id="status-filter" aria-label="Filter by status">
+            <option value="all">All statuses</option>
+            <option value="ok">Scanned</option>
+            <option value="failed">Failed</option>
+          </select>
+          <button id="export" type="button">Export CSV</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="leaderboard">
+          <thead>
+            <tr>
+              <th data-key="rank">#</th>
+              <th data-key="repo">Repository</th>
+              <th data-key="grade">Grade</th>
+              <th data-key="score">Score</th>
+              <th data-key="scanned_at">Scanned</th>
+              <th data-key="status">Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-body"><!-- Rows injected by app.js --></tbody>
+        </table>
+      </div>
+      <p class="empty hidden" id="empty">No scans yet — the daily workflow is just getting started.</p>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel">
+      <div class="modal-header">
+        <h2 id="modal-title"></h2>
+        <button id="modal-close" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body" id="modal-body"><!-- Report injected by app.js --></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Scanned with <a href="https://github.com/codemonstur/codegrade">codegrade</a> ·
+       Repository list from the <a href="https://zenodo.org/records/3626071">libraries.io open data</a> dump ·
+       One project at random, every day · No third-party CDNs</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1928 @@
+{
+  "target": "codemonstur/jcli (https://github.com/codemonstur/jcli.git)",
+  "files": 69,
+  "unixTimestamp": 1792700501,
+  "iso8601": "2026-10-22T20:21:41.364210255Z",
+  "generatedAt": "Thursday, October 22, 2026 20:21:41 UTC",
+  "durationMillis": 728,
+  "duration": "728 ms",
+  "score": 88.8,
+  "checks": [
+    {
+      "id": "long-file",
+      "description": "Files should stay under 150 lines, counting Javadoc as one",
+      "filesChecked": 69,
+      "filesFailing": 12,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliCompletion.java",
+          "line": 268
+        },
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": 287
+        },
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": 770
+        },
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": 404
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": 212
+        },
+        {
+          "path": "src/main/java/jcli/errors/InvalidCommandLine.java",
+          "line": 159
+        },
+        {
+          "path": "src/test/java/unittests/TestArity.java",
+          "line": 159
+        },
+        {
+          "path": "src/test/java/unittests/TestConstraints.java",
+          "line": 226
+        },
+        {
+          "path": "src/test/java/unittests/TestDefaults.java",
+          "line": 157
+        },
+        {
+          "path": "src/test/java/unittests/TestPositional.java",
+          "line": 159
+        },
+        {
+          "path": "src/test/java/unittests/TestSubcommands.java",
+          "line": 158
+        },
+        {
+          "path": "src/test/java/unittests/TestSupportedTypes.java",
+          "line": 167
+        }
+      ]
+    },
+    {
+      "id": "long-line",
+      "description": "Lines should stay under 120 characters",
+      "filesChecked": 69,
+      "filesFailing": 15,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliCompletion.java",
+          "line": 138
+        },
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": 44
+        },
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": 207
+        },
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": 228
+        },
+        {
+          "path": "src/main/java/jcli/CommandResult.java",
+          "line": 56
+        },
+        {
+          "path": "src/main/java/jcli/ConsolePrompter.java",
+          "line": 15
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": 45
+        },
+        {
+          "path": "src/main/java/jcli/annotations/Constants.java",
+          "line": 6
+        },
+        {
+          "path": "src/main/java/jcli/errors/InvalidCommandLine.java",
+          "line": 70
+        },
+        {
+          "path": "src/main/java/jcli/errors/InvalidOptionConfiguration.java",
+          "line": 22
+        },
+        {
+          "path": "src/test/java/unittests/TestConstraints.java",
+          "line": 212
+        },
+        {
+          "path": "src/test/java/unittests/TestExiting.java",
+          "line": 59
+        },
+        {
+          "path": "src/test/java/unittests/TestInteractive.java",
+          "line": 67
+        },
+        {
+          "path": "src/test/java/unittests/TestSubcommands.java",
+          "line": 127
+        },
+        {
+          "path": "src/test/java/unittests/TestSupportedTypes.java",
+          "line": 110
+        }
+      ]
+    },
+    {
+      "id": "blank-lines",
+      "description": "Avoid multiple consecutive blank lines",
+      "filesChecked": 69,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": 121
+        },
+        {
+          "path": "src/test/java/unittests/TestArchitecture.java",
+          "line": 30
+        },
+        {
+          "path": "src/test/java/unittests/TestPositional.java",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "id": "trailing-whitespace",
+      "description": "Lines should not have trailing whitespace",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "tab-indent",
+      "description": "Indent with spaces, not tabs",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "newline-eof",
+      "description": "Files should end with a newline",
+      "filesChecked": 69,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/errors/InvalidPositionalConfiguration.java",
+          "line": 18
+        }
+      ]
+    },
+    {
+      "id": "empty-file",
+      "description": "Files should not be empty",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "star-imports",
+      "description": "Avoid wildcard (star) imports",
+      "filesChecked": 69,
+      "filesFailing": 33,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestAliasesDeprecated.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestArchitecture.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestArity.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestBooleanFlags.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestCompletion.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestConstraints.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestCounting.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDefaults.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDidYouMean.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestExiting.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestFieldConverters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestHelpFeatures.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestIgnoreMissingMandatory.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInteractive.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInvalidArguments.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInvalidOptions.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestListDefaults.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestMessages.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestMissingArguments.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestNativeImageProcessor.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPositional.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPrefixedPositionals.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestRepeatable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestShortOptions.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSimpleCase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSubcommands.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSupportedTypes.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestValueErrors.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestValueParsing.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "unused-imports",
+      "description": "Remove unused imports",
+      "filesChecked": 69,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CommandResult.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "class-name-case",
+      "description": "Class names should be PascalCase",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "method-name-case",
+      "description": "Method/field names should be camelCase",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "exception-name",
+      "description": "Exceptions should not end in Exception",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "oop-name",
+      "description": "Avoid OOP-role suffixes in class names",
+      "filesChecked": 69,
+      "filesFailing": 5,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliReflectionProcessor.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/errors/InvalidOptionConfiguration.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/errors/InvalidPositionalConfiguration.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestNativeImageProcessor.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "long-names",
+      "description": "Avoid overly long class/method names",
+      "filesChecked": 69,
+      "filesFailing": 8,
+      "violations": [
+        {
+          "path": "src/test/java/unittests/TestConstraints.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestCustomConverters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestErrorMessages.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestFieldConverters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestHelpFeatures.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestIgnoreMissingMandatory.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPrefixedPositionals.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSubcommands.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "single-letter-var",
+      "description": "Avoid single-letter variable names",
+      "filesChecked": 69,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliCompletion.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Util.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPositional.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "constant-naming",
+      "description": "static final fields should be UPPER_SNAKE_CASE",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "boolean-method-name",
+      "description": "Boolean methods should start with is/has/can/should",
+      "filesChecked": 69,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliReflectionProcessor.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "default-package",
+      "description": "Classes should declare a package",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "reverse-dns-package",
+      "description": "Avoid reverse-DNS style package names",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "long-method",
+      "description": "Methods should stay under 50 lines",
+      "filesChecked": 69,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "too-many-parameters",
+      "description": "Methods should take at most 5 parameters",
+      "filesChecked": 69,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "deep-nesting",
+      "description": "Avoid deeply nested blocks (max 4)",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "high-complexity",
+      "description": "Methods should stay under cyclomatic complexity 10",
+      "filesChecked": 69,
+      "filesFailing": 5,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliCompletion.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "many-returns",
+      "description": "Avoid methods with too many returns",
+      "filesChecked": 69,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "else-if-chain",
+      "description": "Avoid long else-if chains",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "enhanced-for",
+      "description": "Use enhanced for-loops over index loops",
+      "filesChecked": 69,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/build/CoverageSummary.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliCompletion.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "inner-class-depth",
+      "description": "Avoid deeply nested classes",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "large-class",
+      "description": "Classes should stay under 40 methods+fields",
+      "filesChecked": 69,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "too-many-public-methods",
+      "description": "Classes should have at most 10 public methods",
+      "filesChecked": 69,
+      "filesFailing": 5,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/errors/InvalidCommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/errors/InvalidOptionConfiguration.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestArity.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestConstraints.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "public-mutable-field",
+      "description": "Avoid public non-final fields",
+      "filesChecked": 69,
+      "filesFailing": 42,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/model/FieldAndOption.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/model/FieldAndPosition.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/model/HelpOption.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/example/BuilderExample.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestAliasesDeprecated.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestArity.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestAttachedLongForm.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestBooleanFlags.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestCompletion.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestConstraints.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestCounting.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestCustomConverters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDefaults.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDidYouMean.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDuplicateNames.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestErrorMessages.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestExiting.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestFieldConverters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestHelpFeatures.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestIgnoreMissingMandatory.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInteractive.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInvalidArguments.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInvalidOptions.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestListDefaults.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestMandatoryList.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestMessages.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestMissingArguments.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestOptional.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPositional.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPositionalHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPrefixedPositionals.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestRawListOption.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestRepeatable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSetDefault.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestShortAndLongName.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestShortOptions.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSimpleCase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSubcommands.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSupportedTypes.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestValueErrors.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestValueParsing.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "mutable-static",
+      "description": "Avoid non-final static fields",
+      "filesChecked": 69,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/test/java/unittests/TestInvalidOptions.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "missing-equals-hashcode",
+      "description": "Override equals and hashCode together",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "getters-setters",
+      "description": "Avoid getters and setters (expose behavior, not state)",
+      "filesChecked": 69,
+      "filesFailing": 3,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CommandResult.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Messages.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "boolean-parameter",
+      "description": "Avoid boolean parameters",
+      "filesChecked": 69,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "string-equality",
+      "description": "Compare Strings with .equals, not \u003d\u003d",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "space-indent",
+      "description": "Indent with an even number of spaces",
+      "filesChecked": 69,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "license-header",
+      "description": "Avoid license boilerplate at the top of files",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "final-parameters",
+      "description": "Method parameters should be declared final",
+      "filesChecked": 69,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliPrompter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "magic-number",
+      "description": "Avoid magic numbers",
+      "filesChecked": 69,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "deprecated-api",
+      "description": "Avoid deprecated constructors/APIs",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "suppress-warnings",
+      "description": "Avoid @SuppressWarnings",
+      "filesChecked": 69,
+      "filesFailing": 6,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CommandResult.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestOptional.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPositional.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestRawListOption.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSupportedTypes.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "missing-javadoc",
+      "description": "Public classes/methods should have Javadoc",
+      "filesChecked": 69,
+      "filesFailing": 63,
+      "violations": [
+        {
+          "path": "src/build/CoverageSummary.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliCompletion.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliPrompter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliReflectionProcessor.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CommandResult.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/ConsolePrompter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Messages.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Util.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/errors/InvalidCommandLine.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/errors/InvalidOptionConfiguration.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/errors/InvalidPositionalConfiguration.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/model/FieldAndOption.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/model/FieldAndPosition.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/model/HelpOption.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/example/BuilderExample.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/DisabledTstCustomConverters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestAliasesDeprecated.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestArchitecture.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestArity.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestAttachedLongForm.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestBooleanFlags.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestBuilderCallbacks.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestCompletion.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestConstraints.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestCounting.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestCustomConverters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDefaults.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDidYouMean.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDuplicateNames.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestEnum.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestErrorMessages.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestExiting.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestFieldConverters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestHelpFeatures.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestIgnoreMissingMandatory.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInteractive.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInvalidArguments.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInvalidOptions.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestListDefaults.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestMandatoryList.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestMessages.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestMissingArguments.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestNativeImageProcessor.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestOptional.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPositional.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPositionalHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPrefixedPositionals.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestRawListOption.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestRepeatable.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSetDefault.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestShortAndLongName.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestShortOptions.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSimpleCase.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSubcommands.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSupportedTypes.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestValueErrors.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestValueParsing.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestVersion.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "author-tag",
+      "description": "Avoid @author tags",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "private-field-javadoc",
+      "description": "Avoid Javadoc on private fields",
+      "filesChecked": 69,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/errors/InvalidCommandLine.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "empty-catch",
+      "description": "Avoid empty catch blocks",
+      "filesChecked": 69,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestBuilderCallbacks.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "empty-finally",
+      "description": "Avoid empty finally blocks",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "empty-method",
+      "description": "Avoid empty method bodies",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "catch-general",
+      "description": "Avoid catching broad Exception/Throwable",
+      "filesChecked": 69,
+      "filesFailing": 18,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestAliasesDeprecated.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestArity.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestBuilderCallbacks.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestConstraints.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestCounting.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDefaults.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDidYouMean.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestErrorMessages.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestFieldConverters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestIgnoreMissingMandatory.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInteractive.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPrefixedPositionals.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestShortOptions.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSubcommands.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestValueErrors.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestValueParsing.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "return-null",
+      "description": "Avoid returning null",
+      "filesChecked": 69,
+      "filesFailing": 5,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/ConsolePrompter.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Util.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestInteractive.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "switch-fallthrough",
+      "description": "Avoid switch case fall-through",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "switch-default",
+      "description": "Switch statements should have a default",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "optional-get",
+      "description": "Avoid Optional.get() without isPresent()",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "raw-types",
+      "description": "Avoid raw generic types",
+      "filesChecked": 69,
+      "filesFailing": 13,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliCompletion.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParser.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliReflectionProcessor.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/ParseContext.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Util.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestAliasesDeprecated.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDefaults.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestPositional.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestRawListOption.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestSupportedTypes.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "print-stack-trace",
+      "description": "Avoid printStackTrace()",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "system-out",
+      "description": "Avoid System.out/err (use a logger)",
+      "filesChecked": 69,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/build/CoverageSummary.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/CliParserBuilder.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/ConsolePrompter.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "commented-out-code",
+      "description": "Avoid commented-out code",
+      "filesChecked": 69,
+      "filesFailing": 4,
+      "violations": [
+        {
+          "path": "src/main/java/jcli/CliHelp.java",
+          "line": -1
+        },
+        {
+          "path": "src/main/java/jcli/Reflection.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/example/BuilderExample.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/DisabledTstCustomConverters.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "todo-fixme",
+      "description": "No leftover TODO/FIXME/XXX markers",
+      "filesChecked": 69,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "src/test/java/unittests/TestAttachedLongForm.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "hardcoded-secret",
+      "description": "Avoid hardcoded secrets/credentials",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "weak-hash",
+      "description": "Avoid weak hash algorithms (MD5/SHA1)",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "sql-concat",
+      "description": "Avoid SQL string concatenation",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "test-no-assertions",
+      "description": "Test methods should contain assertions",
+      "filesChecked": 69,
+      "filesFailing": 5,
+      "violations": [
+        {
+          "path": "src/test/java/unittests/TestCustomConverters.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestDuplicateNames.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestMandatoryList.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestRawListOption.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestVersion.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "thread-sleep-test",
+      "description": "Avoid Thread.sleep in tests",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "ignored-test",
+      "description": "Avoid @Ignore/@Disabled tests",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "empty-test",
+      "description": "Avoid empty test methods",
+      "filesChecked": 69,
+      "filesFailing": 0,
+      "violations": []
+    },
+    {
+      "id": "unused-private",
+      "description": "Remove unused private fields/methods",
+      "filesChecked": 69,
+      "filesFailing": 2,
+      "violations": [
+        {
+          "path": "src/test/java/unittests/TestArchitecture.java",
+          "line": -1
+        },
+        {
+          "path": "src/test/java/unittests/TestBuilderCallbacks.java",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "license",
+      "description": "Project must have a LICENSE file",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "readme",
+      "description": "Project must have a README file",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "build-file",
+      "description": "Project must have a build file (pom.xml or Gradle)",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "too-many-deps",
+      "description": "Keep dependencies under 20",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "snapshot-deps",
+      "description": "Avoid -SNAPSHOT/dynamic dependency versions",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-4699349569817506261",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "missing-dep-version",
+      "description": "Every dependency should declare a version",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "library-no-deps",
+      "description": "Libraries should have zero non-test dependencies (plugins exempt)",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "single-class-package",
+      "description": "Packages should contain more than one file",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-4699349569817506261",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "mixed-package",
+      "description": "A package should hold either files or sub-packages, not both",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-4699349569817506261",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "package-too-large",
+      "description": "Keep packages under 30 classes",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-4699349569817506261",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "circular-packages",
+      "description": "Avoid circular package dependencies",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "long-inheritance",
+      "description": "Avoid inheritance chains deeper than 3",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "no-tests",
+      "description": "Project should include tests",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "test-ratio",
+      "description": "Keep a reasonable test-to-source ratio",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    },
+    {
+      "id": "untested-classes",
+      "description": "Every main class should have a test",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": [
+        {
+          "path": "/tmp/codegrade-4699349569817506261",
+          "line": -1
+        }
+      ]
+    },
+    {
+      "id": "duplicated-code",
+      "description": "Avoid duplicated code blocks across files",
+      "filesChecked": 1,
+      "filesFailing": 1,
+      "violations": []
+    }
+  ],
+  "metrics": [
+    {
+      "id": "loc",
+      "description": "Total physical lines",
+      "value": 6477
+    },
+    {
+      "id": "sloc",
+      "description": "Source lines, excluding blanks and comments",
+      "value": 5165
+    },
+    {
+      "id": "max-file-length",
+      "description": "Longest file, in lines",
+      "value": 770
+    },
+    {
+      "id": "cyclomatic-total",
+      "description": "Sum of cyclomatic complexity over all methods",
+      "value": 1043
+    },
+    {
+      "id": "cyclomatic-mean",
+      "description": "Mean cyclomatic complexity per method",
+      "value": 2.365079365079365
+    },
+    {
+      "id": "cyclomatic-max",
+      "description": "Highest cyclomatic complexity of any method",
+      "value": 46
+    },
+    {
+      "id": "max-nesting",
+      "description": "Deepest control-flow nesting, in blocks",
+      "value": 4
+    },
+    {
+      "id": "halstead-volume",
+      "description": "Halstead volume of the whole codebase",
+      "value": 133733.48801298105
+    },
+    {
+      "id": "comment-ratio",
+      "description": "Comment lines, percent of all lines",
+      "value": 3.0569708198239924
+    },
+    {
+      "id": "javadoc-coverage",
+      "description": "Public types and methods with Javadoc, percent",
+      "value": 5.631067961165049
+    },
+    {
+      "id": "parse-failure-rate",
+      "description": "Files that failed to parse, percent",
+      "value": 0
+    },
+    {
+      "id": "maintainability-index",
+      "description": "Maintainability index, 0-100",
+      "value": 76.75375504332185
+    },
+    {
+      "id": "package-instability",
+      "description": "Mean package instability Ce/(Ca+Ce), percent",
+      "value": 55.833333333333336
+    },
+    {
+      "id": "commits",
+      "description": "Commits in history",
+      "value": 1
+    },
+    {
+      "id": "churn",
+      "description": "Lines added and deleted across history",
+      "value": 8589
+    },
+    {
+      "id": "hotspot-index",
+      "description": "Highest churn times complexity of any file",
+      "value": 230700
+    }
+  ],
+  "categories": [
+    {
+      "name": "structure",
+      "score": 40.0
+    },
+    {
+      "name": "dependencies",
+      "score": 66.7
+    },
+    {
+      "name": "coverage",
+      "score": 66.7
+    },
+    {
+      "name": "documentation",
+      "score": 69.1
+    },
+    {
+      "name": "imports",
+      "score": 74.6
+    },
+    {
+      "name": "design",
+      "score": 90.4
+    },
+    {
+      "name": "format",
+      "score": 93.6
+    },
+    {
+      "name": "control flow",
+      "score": 93.9
+    },
+    {
+      "name": "noise",
+      "score": 96.7
+    },
+    {
+      "name": "style",
+      "score": 96.9
+    },
+    {
+      "name": "dead code",
+      "score": 97.1
+    },
+    {
+      "name": "complexity",
+      "score": 97.3
+    },
+    {
+      "name": "naming",
+      "score": 97.4
+    },
+    {
+      "name": "tests",
+      "score": 98.2
+    },
+    {
+      "name": "project",
+      "score": 100.0
+    },
+    {
+      "name": "library",
+      "score": 100.0
+    },
+    {
+      "name": "security",
+      "score": 100.0
+    },
+    {
+      "name": "duplication",
+      "score": 100.0
+    }
+  ]
+}
